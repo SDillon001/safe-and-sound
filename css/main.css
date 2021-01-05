@@ -39,7 +39,7 @@ HEADER
 }
 
 .main-container {
-  position: fixed;
+  position: relative;
   top: 40px;
   overflow: auto;
   width: 414px;
@@ -51,20 +51,18 @@ HEADER
 }
 
 .bottom-bar-bg {
-  position: relative;
+  position: absolute;
   left: 0%;
   top: auto;
   right: 0%;
   bottom: 0%;
   z-index: 0;
-  display: flex;
   width: 414px;
-  height: 700px;
+  height: 84px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  align-items: flex-end;
-  background-color: transparent;
+
 }
 
 .bottom-nav {
