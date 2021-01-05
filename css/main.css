@@ -1,3 +1,34 @@
+/*
+Site:     Safe & Sound Music Fesitval - Mobile App Prototype
+Created:  January, 2021
+
+Table of Contents
+1.  GLOBAL
+2.  HEADER
+
+/* =======================================
+Branding
+======================================= */
+
+/* Brand Colors 
+
+Dark Blue / Text: #001234;
+
+*/
+
+/* =======================================
+GLOBAL
+======================================= */
+
+/* *, *:before, *:after {
+border: 1px solid red;
+}*/
+
+/* =======================================
+HEADER
+======================================= */
+
+
 .main-container {
   position: fixed;
   top: 40px;
@@ -162,6 +193,16 @@
   -ms-flex-align: end;
   align-items: flex-end;
   background-color: transparent;
+}
+
+/* =======================================
+MEDIA QUERIES
+======================================= */
+
+@media screen and (min-width: 1400px) {
+.fab-link {
+    left: 685px;
+}
 }
 
 @media screen and (max-width: 479px) {
