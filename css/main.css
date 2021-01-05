@@ -1,0 +1,171 @@
+.main-container {
+  position: fixed;
+  top: 40px;
+  overflow: auto;
+  width: 414px;
+  height: 896px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #575757;
+}
+
+.body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #323232;
+}
+
+.inner-scroll-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  width: 80%;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #00b2ff;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0%;
+  top: 858px;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 414px;
+  height: 50px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bot-link {
+  padding: 18px 0px;
+  background-color: transparent;
+  position: fixed;
+  display: block;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 18px 0px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.bot-link-icon {
+  display: block;
+  width: 24px;
+}
+
+.bot-link-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bot-link.food {
+  position: relative;
+  left: 80px;
+}
+
+.bot-link.connect {
+  position: relative;
+  left: auto;
+  margin-left: 160px;
+}
+
+.bot-link.settings {
+  position: relative;
+}
+
+.fab-link {
+  position: fixed;
+  left: 925px;
+  bottom: 95px;
+  padding: 0px;
+  background-color: transparent;
+  text-align: left;
+}
+
+.bottom-nav-text {
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bottom-bar-bg {
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 414px;
+  height: 896px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 479px) {
+  .main-container {
+    position: static;
+  }
+}
