@@ -146,9 +146,9 @@ HEADER
 MEDIA QUERIES
 ======================================= */
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .fab-link {
-    left: 685px;
+    left: 685px !important;
     bottom: 135px;
   }
 }
