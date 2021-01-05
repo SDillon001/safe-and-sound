@@ -101,10 +101,6 @@ HEADER
   width: 24px;
 }
 
-.bot-link-icon.active {
-  display: none;
-}
-
 .bot-link-container {
   display: flex;
   justify-content: center;
