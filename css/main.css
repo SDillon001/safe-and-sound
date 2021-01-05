@@ -43,11 +43,24 @@ HEADER
   top: 40px;
   overflow: auto;
   width: 414px;
-  height: 700px;
+  height: 896px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-color: #575757;
+}
+
+.top-nav {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  width: 414px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bottom-bar-bg {
@@ -62,13 +75,12 @@ HEADER
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .bottom-nav {
   position: fixed;
   left: 0%;
-  top: 662px;
+  top: 860px;
   right: 0%;
   bottom: 0%;
   z-index: 1;
@@ -125,7 +137,7 @@ HEADER
 .fab-link {
   position: fixed;
   left: 925px;
-  bottom: 290px;
+  bottom: 95px;
   padding: 0px;
   background-color: transparent;
   text-align: left;
