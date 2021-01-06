@@ -77,6 +77,24 @@ margin-right: auto;
 margin-left: auto;
 }
 
+/* Map Screen */
+
+.screen-one-map {
+    position: fixed;
+    top: 40px;
+}
+
+.map-click {
+    background-color: red;
+    width: 50%;
+    height: 32%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+}
+
+/* Food Screen */
+
 .outer-scroll-container {
 display: flex;
 }
