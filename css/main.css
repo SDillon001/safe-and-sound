@@ -29,149 +29,149 @@ HEADER
 ======================================= */
 
 .body {
-  display: flex;
-  overflow: visible;
-  margin-right: auto;
-  margin-left: auto;
-  flex-direction: column;
-  align-items: center;
-  background-color: #323232;
+display: flex;
+overflow: visible;
+margin-right: auto;
+margin-left: auto;
+flex-direction: column;
+align-items: center;
+background-color: #323232;
 }
 
 .main-container {
-  position: relative;
-  top: 40px;
-  overflow: auto;
-  width: 414px;
-  height: 896px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
+position: relative;
+top: 40px;
+overflow: auto;
+width: 414px;
+height: 896px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
 }
 
 .top-nav {
-  position: sticky;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 0;
-  width: 414px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+position: sticky;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: 0%;
+z-index: 0;
+width: 414px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
 }
 
 .bottom-bar-bg {
-  position: fixed;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 40px;
-  z-index: 0;
-  width: 414px;
-  height: 84px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+position: fixed;
+left: 0%;
+top: auto;
+right: 0%;
+bottom: 40px;
+z-index: 0;
+width: 414px;
+height: 84px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
 }
 
 .outer-scroll-container {
-    display: flex;
+display: flex;
 }
 
 .inner-scroll-container {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+display: grid;
+margin: 0 auto;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(auto, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
 }
 
 .prod-description {
-  font-family: lato;
-  color: #fff;
+font-family: lato;
+color: #fff;
 }
 
 .bottom-nav {
-  position: fixed;
-  left: 0%;
-  top: 860px;
-  right: 0%;
-  bottom: 0%;
-  z-index: 1;
-  display: flex;
-  width: 414px;
-  height: 50px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-  justify-content: space-between;
-  align-items: center;
+position: fixed;
+left: 0%;
+top: 860px;
+right: 0%;
+bottom: 0%;
+z-index: 1;
+display: flex;
+width: 414px;
+height: 50px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+padding-right: 30px;
+padding-left: 30px;
+justify-content: space-between;
+align-items: center;
 }
 
 .bot-link {
-  padding: 18px 0px;
-  background-color: transparent;
-  position: fixed;
-  display: block;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 18px 0px;
-  background-color: transparent;
-  text-align: center;
+padding: 18px 0px;
+background-color: transparent;
+position: fixed;
+display: block;
+margin-right: 0px;
+margin-left: 0px;
+padding: 18px 0px;
+background-color: transparent;
+text-align: center;
 }
 
 .bot-link-icon {
-  display: block;
-  width: 24px;
+display: block;
+width: 24px;
 }
 
 .bot-link-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
 }
 
 .bot-link.food {
-  position: relative;
-  left: 80px;
+position: relative;
+left: 80px;
 }
 
 .bot-link.connect {
-  position: relative;
-  left: auto;
-  margin-left: 160px;
+position: relative;
+left: auto;
+margin-left: 160px;
 }
 
 .bot-link.settings {
-  position: relative;
+position: relative;
 }
 
 .fab-link {
-  position: fixed;
-  left: 925px;
-  bottom: 95px;
-  padding: 0px;
-  background-color: transparent;
-  text-align: left;
+position: fixed;
+left: 925px;
+bottom: 95px;
+padding: 0px;
+background-color: transparent;
+text-align: left;
 }
 
 .bottom-nav-text {
-  display: inline-block;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
+display: inline-block;
+font-family: Lato, sans-serif;
+color: #fff;
+font-size: 12px;
+text-align: center;
+text-transform: uppercase;
 }
 
 .bottom-nav-text.active {
-  color: #E742F1;
+color: #E742F1;
 }
 
 /* =======================================
@@ -179,14 +179,23 @@ MEDIA QUERIES
 ======================================= */
 
 @media only screen and (max-width: 1450px) {
-  .fab-link {
-    left: 685px;
-    bottom: 135px;
-  }
+.main-container {
+height: 700px;
+}
+
+.bottom-nav {
+top: 705px;
+}
+
+.fab-link {
+left: 685px;
+bottom: 92px;
+}
+
 }
 
 @media screen and (max-width: 479px) {
-  .main-container {
-    position: static;
-  }
+.main-container {
+position: static;
+}
 }
