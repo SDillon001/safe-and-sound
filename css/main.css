@@ -50,6 +50,18 @@ margin-left: auto;
 background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
 }
 
+.main-container.map-zoom-in {
+position: relative;
+top: 40px;
+overflow: auto;
+width: 414px;
+height: 896px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+background-image: url(images/map-zoom-in-bg.png)
+}
+
 .top-nav {
 position: sticky;
 left: 0%;
@@ -85,12 +97,82 @@ margin-left: auto;
 }
 
 .map-click {
-    background-color: red;
+    background-color: transparent;
     width: 50%;
     height: 32%;
     position: absolute;
     top: 48%;
     left: 50%;
+}
+
+/* Map Zoom */
+
+.outer-scroll-container.parking {
+  margin-right: 5px;
+}
+
+.inner-scroll-container.parking {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 11px;
+  position: relative;
+  right: -45px;
+  top: 23px;
+}
+
+.map-zoom-bg {
+    position: fixed;
+    top: 40px;
+}
+
+/* space-c14 */
+
+.content-wrapper {
+  position: relative;
+  top: -18px;
+}
+
+.inner-scroll-container.space-c14 {
+display: grid;
+margin: 0 auto;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(auto, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+
+.users-image img {
+    box-shadow: 6px 5px 10px rgb(0 0 0 / 0.3);
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.title h4 {
+margin: 0 auto;
+}
+
+.user-name h4 {
+  font-family: lato;
+  margin: 10px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* User Profile */
+
+.user-profile-image {
+  position: fixed;
+  top: 40px;
 }
 
 /* Food Screen */
