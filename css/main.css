@@ -24,6 +24,16 @@ GLOBAL
 border: 1px solid red;
 }*/
 
+@font-face { 
+  font-family: Syncopate-Regular; 
+  src: url('fonts/Syncopate-Regular.ttf'); 
+} 
+
+@font-face { 
+  font-family: Syncopate-Bold; 
+  font-weight: bold; 
+  src: url('fonts/Delicious-Bold.otf');}
+
 /* =======================================
 HEADER
 ======================================= */
@@ -149,9 +159,9 @@ grid-row-gap: 15px;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
 
 .title h4 {
@@ -159,7 +169,7 @@ margin: 0 auto;
 }
 
 .user-name h4 {
-  font-family: lato;
+  font-family: Lato;
   margin: 10px 0px 0px;
   color: #fff;
   font-size: 14px;
@@ -170,9 +180,66 @@ margin: 0 auto;
 
 /* User Profile */
 
+.user-title {
+  display: flex;
+  justify-content: center;
+  font-family: Syncopate-Regular, Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.user-title h4 {
+margin: 0 auto;
+}
+
 .user-profile-image {
   position: fixed;
   top: 40px;
+}
+
+/* User Chat-1 */
+
+.user-chat-wrapper {
+  position: relative;
+  top: -30px;
+}
+
+.user-chat-title {
+  display: flex;
+  justify-content: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.user-chat-title h4 {
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.chat-bubble-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 6% 0%;
+}
+
+.right-bubble {
+    text-align: right;
+}
+
+.left-bubble {
+    text-align: left;
+}
+
+a#chat-link {
+    position: absolute;
+    width: 414px;
+    height: 44px;
+    background-color: transparent;
+}
+
+.keyboard-input {
+  position: relative;
+  bottom: 0px;
+  z-index: 0;
 }
 
 /* Food Screen */
@@ -196,34 +263,30 @@ color: #fff;
 }
 
 .bottom-nav {
-position: fixed;
-left: 0%;
-top: 860px;
-right: 0%;
-bottom: 0%;
-z-index: 1;
-display: flex;
-width: 414px;
-height: 50px;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;
-padding-right: 30px;
-padding-left: 30px;
-justify-content: space-between;
-align-items: center;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 50px;
+  z-index: 1;
+  display: flex;
+  width: 414px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bot-link {
-padding: 18px 0px;
-background-color: transparent;
-position: fixed;
-display: block;
-margin-right: 0px;
-margin-left: 0px;
-padding: 18px 0px;
-background-color: transparent;
-text-align: center;
+  padding: 18px 0px;
+  background-color: transparent;
+  position: fixed;
+  display: block;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 18px 0px;
+  background-color: transparent;
+  text-align: center;
 }
 
 .bot-link-icon {
