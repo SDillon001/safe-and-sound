@@ -41,12 +41,16 @@ HEADER
 /* Preloader */
 
 .preloader {
-  width: 414px;
-  height: 896px;
-  position: relative;
-  top: 40px;
-  z-index: 2000;
-  background-color: black;
+    width: 414px;
+    height: 896px;
+    position: fixed;
+    top: 0%;
+    z-index: 10000;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .body {
@@ -318,8 +322,21 @@ left:50%;
     width: 286px;
     height: 55px;
     background: #000;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
     border-radius: 100px;
     margin: 0 auto;
+    border-image-source: linear-gradient(to left, #FFF, #E742F1);
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.menu-but-container:after {
+  border-radius: 100px;
 }
 
 .menu-but-container img {
