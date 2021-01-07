@@ -41,22 +41,37 @@ HEADER
 /* Preloader */
 
 .preloader {
-  width: 414px;
-  height: 896px;
-  position: fixed;
-  padding-top: 70px;
-  z-index: 4000;
-  background-color: black;
+    width: 414px;
+    height: 896px;
+    position: fixed;
+    z-index: 4000;
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+}
+
+.preload-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    position: absolute;
+}
+
+.preloader img {
+    width: 70% !important;
 }
 
 .preloadimg {
-  padding-left: 120px;
+    width: 46% !important;
+    margin-top: 7%;
 }
 
 .preloadtext {
-  padding-left: 90px;
-  padding-top: 10px;
-  color: #fff;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
 }
 
 .body {
