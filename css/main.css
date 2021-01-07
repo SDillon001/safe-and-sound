@@ -338,6 +338,7 @@ color: #E742F1;
 }
 
 /* Drone Delivery Main */
+
 .ssf-menu-enter {
 position:fixed;
 top:40px;
@@ -352,8 +353,17 @@ top:48%;
 left:50%;
 }
 
+/* Drone Delivery Menu Food */
 
-
+.food-name h4 {
+  font-family: Lato;
+  margin: 10px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 
 
