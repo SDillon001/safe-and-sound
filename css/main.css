@@ -24,15 +24,15 @@ GLOBAL
 border: 1px solid red;
 }*/
 
-@font-face { 
-  font-family: Syncopate-Regular; 
-  src: url('fonts/Syncopate-Regular.ttf'); 
-} 
+@font-face {
+  font-family: Syncopate-Regular;
+  src: url("fonts/Syncopate-Regular.ttf");
+}
 
-@font-face { 
-  font-family: Syncopate-Bold; 
-  font-weight: bold; 
-  src: url('fonts/Delicious-Bold.otf');
+@font-face {
+  font-family: Syncopate-Bold;
+  font-weight: bold;
+  src: url("fonts/Delicious-Bold.otf");
 }
 
 /* =======================================
@@ -41,38 +41,38 @@ HEADER
 /* Preloader */
 
 .preloader {
-    width: 414px;
-    height: 896px;
-    position: fixed;
-    top: 40px;
-    z-index: 4000;
-    background-color: black;
-    display: block;
-    margin: 0 auto;
+  width: 414px;
+  height: 896px;
+  position: fixed;
+  top: 40px;
+  z-index: 4000;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
 }
 
 .preload-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 25%;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  position: absolute;
 }
 
 .preloader img {
-    width: 70% !important;
+  width: 70% !important;
 }
 
 #preloadimg {
-    width: 46% !important;
-    margin-top: 7%;
+  width: 46% !important;
+  margin-top: 7%;
 }
 
 .preloadtext {
-    padding-top: 10px;
-    color: #fff;
-    text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
 }
 
 .body {
@@ -94,50 +94,50 @@ HEADER
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(/css/images/bg-blur-overlay-v2.png);
+  background-image: url(/images/bg-blur-overlay-v2.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .main-container.map-zoom-in {
-position: relative;
-top: 40px;
-overflow: auto;
-width: 414px;
-height: 896px;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;
-background-image: url(images/map-zoom-in-bg.png)
+  position: relative;
+  top: 40px;
+  overflow: auto;
+  width: 414px;
+  height: 896px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(images/map-zoom-in-bg.png);
 }
 
 .top-nav {
-position: sticky;
-left: 0%;
-top: 0%;
-right: 0%;
-bottom: 0%;
-z-index: 3000;
-width: 414px;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;
+  position: sticky;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 3000;
+  width: 414px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Map Screen */
 
 .screen-one-map {
-    position: fixed;
-    top: 40px;
+  position: fixed;
+  top: 40px;
 }
 
 .map-click {
-    background-color: transparent;
-    width: 50%;
-    height: 32%;
-    position: absolute;
-    top: 48%;
-    left: 50%;
+  background-color: transparent;
+  width: 50%;
+  height: 32%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
 }
 
 /* Map Zoom */
@@ -158,8 +158,8 @@ margin-left: auto;
 }
 
 .map-zoom-bg {
-    position: fixed;
-    top: 40px;
+  position: fixed;
+  top: 40px;
 }
 
 /* space-c14 */
@@ -170,17 +170,17 @@ margin-left: auto;
 }
 
 .inner-scroll-container.space-c14 {
-display: grid;
-margin: 0 auto;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(auto, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 15px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 
 .users-image img {
-    box-shadow: 6px 5px 10px rgb(0 0 0 / 0.3);
-    border-radius: 50%;
+  box-shadow: 6px 5px 10px rgb(0 0 0 / 0.3);
+  border-radius: 50%;
 }
 
 .title {
@@ -190,7 +190,7 @@ grid-row-gap: 15px;
 }
 
 .title h4 {
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .user-name h4 {
@@ -213,7 +213,7 @@ margin: 0 auto;
 }
 
 .user-title h4 {
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .user-profile-image {
@@ -227,7 +227,6 @@ margin: 0 auto;
   position: absolute;
   left: 55px;
   top: 500px;
-
 }
 /* User Chat-1 */
 
@@ -255,18 +254,18 @@ margin: 0 auto;
 }
 
 .right-bubble {
-    text-align: right;
+  text-align: right;
 }
 
 .left-bubble {
-    text-align: left;
+  text-align: left;
 }
 
 a#chat-link {
-    position: absolute;
-    width: 414px;
-    height: 44px;
-    background-color: transparent;
+  position: absolute;
+  width: 414px;
+  height: 44px;
+  background-color: transparent;
 }
 
 .keyboard-input {
@@ -277,75 +276,76 @@ a#chat-link {
 /* Food Screen */
 
 .outer-scroll-container {
-display: flex;
+  display: flex;
 }
 
 .inner-scroll-container {
-display: grid;
-margin: 0 auto;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(auto, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .prod-description {
-font-family: lato;
-color: #fff;
+  font-family: lato;
+  color: #fff;
 }
 
 /* Drone Delivery Main Screen */
 
 .menu-click {
-background-color:transparent;
-width:50%;
-height:32%;
-position:absolute;
-top:48%;
-left:50%;
+  background-color: transparent;
+  width: 50%;
+  height: 32%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
 }
 
 .food-menu-gif {
-    width: 414px;
-    height: 350px;
+  width: 414px;
+  height: 350px;
 }
 
 .food-menu-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 30px;
 }
 
 .food-menu-title img {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 .food-menu-title h4 {
-    color: #fff;
-    font-family: Syncopate-bold; 
-    font-size: 24px;
-    text-transform: uppercase;
+  color: #fff;
+  font-family: Syncopate-bold;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .menu-but-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 286px;
-    height: 55px;
-    background: #000;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-radius: 100px;
-    margin: 0 auto;
-    border: double 2px transparent;
-    border-radius: 100px;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at top left, #fff,#E742F1, #fff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 286px;
+  height: 55px;
+  background: #000;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-radius: 100px;
+  margin: 0 auto;
+  border: double 2px transparent;
+  border-radius: 100px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    radial-gradient(circle at top left, #fff, #e742f1, #fff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .menu-but-container:after {
@@ -353,15 +353,15 @@ left:50%;
 }
 
 .menu-but-container img {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 .menu-buttons {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .menu-buttons a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu-but-container h4 {
@@ -378,7 +378,7 @@ left:50%;
 /* Drone Delivery Menu Food Oreos */
 
 .food-name {
-font-family: Lato;
+  font-family: Lato;
   margin: 10px 0px 0px;
   color: #fff;
   font-size: 14px;
@@ -420,18 +420,18 @@ BOTTOM NAV MENU
 }
 
 .bottom-menu {
-    position: fixed;
-    left: 0%;
-    right: 0%;
-    bottom: 52px;
-    z-index: 1;
-    display: flex;
-    width: 414px;
-    margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 52px;
+  z-index: 1;
+  display: flex;
+  width: 414px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fab-link {
@@ -456,42 +456,42 @@ BOTTOM NAV MENU
 }
 
 .bot-link-icon {
-display: block;
-width: 24px;
+  display: block;
+  width: 24px;
 }
 
 .bot-link-container {
-display: flex;
-justify-content: center;
-text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .bot-link.food {
-position: relative;
-left: 80px;
+  position: relative;
+  left: 80px;
 }
 
 .bot-link.connect {
-position: relative;
-left: auto;
-margin-left: 160px;
+  position: relative;
+  left: auto;
+  margin-left: 160px;
 }
 
 .bot-link.settings {
-position: relative;
+  position: relative;
 }
 
 .bottom-nav-text {
-display: inline-block;
-font-family: Lato, sans-serif;
-color: #fff;
-font-size: 12px;
-text-align: center;
-text-transform: uppercase;
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .bottom-nav-text.active {
-color: #E742F1;
+  color: #e742f1;
 }
 
 /* =======================================
@@ -499,51 +499,50 @@ MEDIA QUERIES
 ======================================= */
 
 @media only screen and (max-width: 1450px) {
-
-  .main-container, .main-container.map-zoom-in {
-      height: 100vh;
-      top: 0;
-      bottom: 0;
+  .main-container,
+  .main-container.map-zoom-in {
+    height: 100vh;
+    top: 0;
+    bottom: 0;
   }
 
   .bottom-menu {
-      bottom: 12px;
+    bottom: 12px;
   }
 
   .bottom-bar-bg {
-      bottom: 0px;
+    bottom: 0px;
   }
 
   .fab-link {
     left: 685px;
-      bottom: 52px;
+    bottom: 52px;
   }
 
   .keyboard-input {
-      position: fixed;
-      bottom: 0px;
+    position: fixed;
+    bottom: 0px;
   }
 
   /* Drone Delivery */
   .food-menu-title {
-      top: -15px;
-      position: relative;
+    top: -15px;
+    position: relative;
   }
 
   .food-menu-gif {
-      display: flex;
-      height: 270px;
-      justify-content: center;
+    display: flex;
+    height: 270px;
+    justify-content: center;
   }
 
   .food-menu-gif img {
-      width: 83%;
+    width: 83%;
   }
-
 }
 
 @media screen and (max-width: 479px) {
-.main-container {
-position: static;
-}
+  .main-container {
+    position: static;
+  }
 }
