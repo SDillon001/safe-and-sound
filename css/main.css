@@ -60,13 +60,13 @@ HEADER
 }
 
 .body {
-display: flex;
-overflow: visible;
-margin-right: auto;
-margin-left: auto;
-flex-direction: column;
-align-items: center;
-background-color: #323232;
+  display: flex;
+  overflow: visible;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323232;
 }
 
 .main-container {
