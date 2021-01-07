@@ -43,10 +43,20 @@ HEADER
 .preloader {
   width: 414px;
   height: 896px;
-  position: relative;
-  top: 40px;
-  z-index: 2000;
+  position: fixed;
+  padding-top: 70px;
+  z-index: 4000;
   background-color: black;
+}
+
+.preloadimg {
+  padding-left: 120px;
+}
+
+.preloadtext {
+  padding-left: 90px;
+  padding-top: 10px;
+  color: #fff;
 }
 
 .body {
@@ -60,6 +70,8 @@ background-color: #323232;
 }
 
 .main-container {
+display: flex;
+flex-direction: column;
 position: relative;
 top: 40px;
 overflow: auto;
@@ -89,7 +101,7 @@ left: 0%;
 top: 0%;
 right: 0%;
 bottom: 0%;
-z-index: 9999;
+z-index: 3000;
 width: 414px;
 max-width: 100%;
 margin-right: auto;
@@ -313,7 +325,7 @@ left:50%;
 
 .food-menu-title h4 {
     color: #fff;
-    font-family: Syncopate-Regular; 
+    font-family: Syncopate-bold; 
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -326,8 +338,19 @@ left:50%;
     width: 286px;
     height: 55px;
     background: #000;
+    border-image-slice: 1;
+    border-width: 5px;
     border-radius: 100px;
     margin: 0 auto;
+    border: double 2px transparent;
+    border-radius: 100px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at top left, #fff,#E742F1, #fff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.menu-but-container:after {
+  border-radius: 100px;
 }
 
 .menu-but-container img {
