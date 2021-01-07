@@ -63,7 +63,7 @@ HEADER
     width: 70% !important;
 }
 
-.preloadimg {
+#preloadimg {
     width: 46% !important;
     margin-top: 7%;
 }
