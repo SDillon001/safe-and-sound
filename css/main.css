@@ -42,10 +42,20 @@ HEADER
 .preloader {
   width: 414px;
   height: 896px;
-  position: relative;
-  top: 40px;
-  z-index: 2000;
+  position: fixed;
+  padding-top: 70px;
+  z-index: 4000;
   background-color: black;
+}
+
+.preloadimg {
+  padding-left: 120px;
+}
+
+.preloadtext {
+  padding-left: 90px;
+  padding-top: 10px;
+  color: #fff;
 }
 
 .body {
@@ -59,6 +69,8 @@ background-color: #323232;
 }
 
 .main-container {
+display: flex;
+flex-direction: column;
 position: relative;
 top: 40px;
 overflow: auto;
@@ -88,7 +100,7 @@ left: 0%;
 top: 0%;
 right: 0%;
 bottom: 0%;
-z-index: 9999;
+z-index: 3000;
 width: 414px;
 max-width: 100%;
 margin-right: auto;
