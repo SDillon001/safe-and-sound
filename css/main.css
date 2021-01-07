@@ -44,6 +44,7 @@ HEADER
     width: 414px;
     height: 896px;
     position: fixed;
+    top: 40px;
     z-index: 4000;
     background-color: black;
     display: block;
@@ -85,17 +86,17 @@ HEADER
 }
 
 .main-container {
-display: flex;
-flex-direction: column;
-position: relative;
-top: 40px;
-overflow: auto;
-width: 414px;
-height: 896px;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;
-background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
+  position: relative;
+  top: 40px;
+  overflow: auto;
+  width: 414px;
+  height: 896px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(/css/images/bg-blur-overlay-v2.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-container.map-zoom-in {
@@ -118,20 +119,6 @@ right: 0%;
 bottom: 0%;
 z-index: 3000;
 width: 414px;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;
-}
-
-.bottom-bar-bg {
-position: fixed;
-left: 0%;
-top: auto;
-right: 0%;
-bottom: 40px;
-z-index: 0;
-width: 414px;
-height: 84px;
 max-width: 100%;
 margin-right: auto;
 margin-left: auto;
@@ -283,9 +270,8 @@ a#chat-link {
 }
 
 .keyboard-input {
-  position: relative;
-  bottom: 0px;
-  z-index: 0;
+  position: fixed;
+  bottom: 40px;
 }
 
 /* Food Screen */
@@ -308,7 +294,7 @@ font-family: lato;
 color: #fff;
 }
 
-/* Drone Delivery Main */
+/* Drone Delivery Main Screen */
 
 .menu-click {
 background-color:transparent;
@@ -318,8 +304,6 @@ position:absolute;
 top:48%;
 left:50%;
 }
-
-/* Drone Delivery Menu Food */
 
 .food-menu-gif {
     width: 414px;
@@ -391,6 +375,22 @@ left:50%;
   text-align: center;
 }
 
+/* Drone Delivery Menu Food Oreos */
+
+.food-name {
+font-family: Lato;
+  margin: 10px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.food-name h4 {
+  list-style: none;
+}
+
 /* =======================================
 BOTTOM NAV MENU
 ======================================= */
@@ -399,7 +399,6 @@ BOTTOM NAV MENU
   position: fixed;
   left: 0%;
   right: 0%;
-  bottom: 50px;
   z-index: 1;
   display: flex;
   width: 414px;
@@ -408,6 +407,40 @@ BOTTOM NAV MENU
   padding-left: 30px;
   justify-content: space-between;
   align-items: center;
+}
+
+.bottom-bar-bg {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 40px;
+  width: 414px;
+  margin: 0 auto;
+}
+
+.bottom-menu {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    bottom: 52px;
+    z-index: 1;
+    display: flex;
+    width: 414px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fab-link {
+  position: fixed;
+  left: 925px;
+  bottom: 95px;
+  padding: 0px;
+  background-color: transparent;
+  text-align: left;
 }
 
 .bot-link {
@@ -448,15 +481,6 @@ margin-left: 160px;
 position: relative;
 }
 
-.fab-link {
-position: fixed;
-left: 925px;
-bottom: 95px;
-padding: 0px;
-background-color: transparent;
-text-align: left;
-}
-
 .bottom-nav-text {
 display: inline-block;
 font-family: Lato, sans-serif;
@@ -476,16 +500,27 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 1450px) {
 .main-container, .main-container.map-zoom-in {
-height: 700px;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
 }
 
-.bottom-nav {
-top: 705px;
+.bottom-menu {
+    bottom: 12px;
+}
+
+.bottom-bar-bg {
+    bottom: 0px;
 }
 
 .fab-link {
-left: 685px;
-bottom: 92px;
+  left: 685px;
+    bottom: 52px;
+}
+
+.keyboard-input {
+    position: fixed;
+    bottom: 0px;
 }
 
 }
