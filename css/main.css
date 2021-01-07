@@ -24,90 +24,253 @@ GLOBAL
 border: 1px solid red;
 }*/
 
+@font-face { 
+  font-family: Syncopate-Regular; 
+  src: url('fonts/Syncopate-Regular.ttf'); 
+} 
+
+@font-face { 
+  font-family: Syncopate-Bold; 
+  font-weight: bold; 
+  src: url('fonts/Delicious-Bold.otf');}
+
 /* =======================================
 HEADER
 ======================================= */
 
 .body {
-  display: flex;
-  overflow: visible;
-  margin-right: auto;
-  margin-left: auto;
-  flex-direction: column;
-  align-items: center;
-  background-color: #323232;
+display: flex;
+overflow: visible;
+margin-right: auto;
+margin-left: auto;
+flex-direction: column;
+align-items: center;
+background-color: #323232;
 }
 
 .main-container {
-  position: relative;
-  top: 40px;
-  overflow: auto;
-  width: 414px;
-  height: 896px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
+position: relative;
+top: 40px;
+overflow: auto;
+width: 414px;
+height: 896px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+background-image: url(https://SDillon001.github.io/safe-and-sound/css/images/bg-blur-overlay-v2.png)
+}
+
+.main-container.map-zoom-in {
+position: relative;
+top: 40px;
+overflow: auto;
+width: 414px;
+height: 896px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+background-image: url(images/map-zoom-in-bg.png)
 }
 
 .top-nav {
-  position: sticky;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 0;
-  width: 414px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+position: sticky;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: 0%;
+z-index: 9999;
+width: 414px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
 }
 
 .bottom-bar-bg {
-  position: fixed;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 40px;
-  z-index: 0;
-  width: 414px;
-  height: 84px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+position: fixed;
+left: 0%;
+top: auto;
+right: 0%;
+bottom: 40px;
+z-index: 0;
+width: 414px;
+height: 84px;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
 }
 
+/* Map Screen */
+
+.screen-one-map {
+    position: fixed;
+    top: 40px;
+}
+
+.map-click {
+    background-color: transparent;
+    width: 50%;
+    height: 32%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+}
+
+/* Map Zoom */
+
+.outer-scroll-container.parking {
+  margin-right: 5px;
+}
+
+.inner-scroll-container.parking {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 11px;
+  position: relative;
+  right: -45px;
+  top: 23px;
+}
+
+.map-zoom-bg {
+    position: fixed;
+    top: 40px;
+}
+
+/* space-c14 */
+
+.content-wrapper {
+  position: relative;
+  top: -18px;
+}
+
+.inner-scroll-container.space-c14 {
+display: grid;
+margin: 0 auto;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(auto, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+
+.users-image img {
+    box-shadow: 6px 5px 10px rgb(0 0 0 / 0.3);
+    border-radius: 50%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.title h4 {
+margin: 0 auto;
+}
+
+.user-name h4 {
+  font-family: Lato;
+  margin: 10px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* User Profile */
+
+.user-title {
+  display: flex;
+  justify-content: center;
+  font-family: Syncopate-Regular, Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.user-title h4 {
+margin: 0 auto;
+}
+
+.user-profile-image {
+  position: fixed;
+  top: 40px;
+}
+
+/* User Chat-1 */
+
+.user-chat-wrapper {
+  position: relative;
+  top: -30px;
+}
+
+.user-chat-title {
+  display: flex;
+  justify-content: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.user-chat-title h4 {
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.chat-bubble-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 6% 0%;
+}
+
+.right-bubble {
+    text-align: right;
+}
+
+.left-bubble {
+    text-align: left;
+}
+
+a#chat-link {
+    position: absolute;
+    width: 414px;
+    height: 44px;
+    background-color: transparent;
+}
+
+.keyboard-input {
+  position: relative;
+  bottom: 0px;
+  z-index: 0;
+}
+
+/* Food Screen */
+
 .outer-scroll-container {
-    display: flex;
+display: flex;
 }
 
 .inner-scroll-container {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+display: grid;
+margin: 0 auto;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(auto, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
 }
 
 .prod-description {
-  font-family: lato;
-  color: #fff;
+font-family: lato;
+color: #fff;
 }
 
 .bottom-nav {
   position: fixed;
   left: 0%;
-  top: 860px;
   right: 0%;
-  bottom: 0%;
+  bottom: 50px;
   z-index: 1;
   display: flex;
   width: 414px;
-  height: 50px;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
   justify-content: space-between;
@@ -127,66 +290,112 @@ HEADER
 }
 
 .bot-link-icon {
-  display: block;
-  width: 24px;
+display: block;
+width: 24px;
 }
 
 .bot-link-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
 }
 
 .bot-link.food {
-  position: relative;
-  left: 80px;
+position: relative;
+left: 80px;
 }
 
 .bot-link.connect {
-  position: relative;
-  left: auto;
-  margin-left: 160px;
+position: relative;
+left: auto;
+margin-left: 160px;
 }
 
 .bot-link.settings {
-  position: relative;
+position: relative;
 }
 
 .fab-link {
-  position: fixed;
-  left: 925px;
-  bottom: 95px;
-  padding: 0px;
-  background-color: transparent;
-  text-align: left;
+position: fixed;
+left: 925px;
+bottom: 95px;
+padding: 0px;
+background-color: transparent;
+text-align: left;
 }
 
 .bottom-nav-text {
-  display: inline-block;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
+display: inline-block;
+font-family: Lato, sans-serif;
+color: #fff;
+font-size: 12px;
+text-align: center;
+text-transform: uppercase;
 }
 
 .bottom-nav-text.active {
-  color: #E742F1;
+color: #E742F1;
 }
+
+/* Drone Delivery Main */
+
+.ssf-menu-enter {
+position:fixed;
+top:40px;
+}
+
+.menu-click {
+background-color:transparent;
+width:50%;
+height:32%;
+position:absolute;
+top:48%;
+left:50%;
+}
+
+/* Drone Delivery Menu Food */
+
+.food-name h4 {
+  font-family: Lato;
+  margin: 10px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 /* =======================================
 MEDIA QUERIES
 ======================================= */
 
 @media only screen and (max-width: 1450px) {
-  .fab-link {
-    left: 685px;
-    bottom: 135px;
-  }
+.main-container, .main-container.map-zoom-in {
+height: 700px;
+}
+
+.bottom-nav {
+top: 705px;
+}
+
+.fab-link {
+left: 685px;
+bottom: 92px;
+}
+
 }
 
 @media screen and (max-width: 479px) {
-  .main-container {
-    position: static;
-  }
+.main-container {
+position: static;
+}
 }
