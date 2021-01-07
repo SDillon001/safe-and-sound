@@ -337,6 +337,33 @@ text-transform: uppercase;
 color: #E742F1;
 }
 
+/* Drone Delivery Main */
+.ssf-menu-enter {
+position:fixed;
+top:40px;
+}
+
+.menu-click {
+background-color:transparent;
+width:50%;
+height:32%;
+position:absolute;
+top:48%;
+left:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =======================================
 MEDIA QUERIES
 ======================================= */
