@@ -499,29 +499,46 @@ MEDIA QUERIES
 ======================================= */
 
 @media only screen and (max-width: 1450px) {
-.main-container, .main-container.map-zoom-in {
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-}
 
-.bottom-menu {
-    bottom: 12px;
-}
+  .main-container, .main-container.map-zoom-in {
+      height: 100vh;
+      top: 0;
+      bottom: 0;
+  }
 
-.bottom-bar-bg {
-    bottom: 0px;
-}
+  .bottom-menu {
+      bottom: 12px;
+  }
 
-.fab-link {
-  left: 685px;
-    bottom: 52px;
-}
+  .bottom-bar-bg {
+      bottom: 0px;
+  }
 
-.keyboard-input {
-    position: fixed;
-    bottom: 0px;
-}
+  .fab-link {
+    left: 685px;
+      bottom: 52px;
+  }
+
+  .keyboard-input {
+      position: fixed;
+      bottom: 0px;
+  }
+
+  /* Drone Delivery */
+  .food-menu-title {
+      top: -15px;
+      position: relative;
+  }
+
+  .food-menu-gif {
+      display: flex;
+      height: 270px;
+      justify-content: center;
+  }
+
+  .food-menu-gif img {
+      width: 83%;
+  }
 
 }
 
