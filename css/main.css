@@ -215,10 +215,18 @@ margin: 0 auto;
 }
 
 .user-profile-image {
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  top: 45px;
+  left: 15px;
 }
 
+.message-feed-button {
+  z-index: 1000;
+  position: absolute;
+  left: 55px;
+  top: 500px;
+
+}
 /* User Chat-1 */
 
 .user-chat-wrapper {
