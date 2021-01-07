@@ -32,7 +32,8 @@ border: 1px solid red;
 @font-face { 
   font-family: Syncopate-Bold; 
   font-weight: bold; 
-  src: url('fonts/Delicious-Bold.otf');}
+  src: url('fonts/Delicious-Bold.otf');
+}
 
 /* =======================================
 HEADER
@@ -280,6 +281,82 @@ font-family: lato;
 color: #fff;
 }
 
+/* Drone Delivery Main */
+
+.menu-click {
+background-color:transparent;
+width:50%;
+height:32%;
+position:absolute;
+top:48%;
+left:50%;
+}
+
+/* Drone Delivery Menu Food */
+
+.food-menu-gif {
+    width: 414px;
+    height: 350px;
+}
+
+.food-menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.food-menu-title img {
+    margin-right: 5%;
+}
+
+.food-menu-title h4 {
+    color: #fff;
+    font-family: Syncopate-Regular; 
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.menu-but-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 286px;
+    height: 55px;
+    background: #000;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.menu-but-container img {
+    margin-right: 5%;
+}
+
+.menu-buttons {
+    margin-bottom: 20px;
+}
+
+.menu-buttons a {
+    text-decoration: none;
+}
+
+.menu-but-container h4 {
+  font-family: Syncopate-Regular;
+  margin: 5px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* =======================================
+BOTTOM NAV MENU
+======================================= */
+
 .bottom-nav {
   position: fixed;
   left: 0%;
@@ -353,34 +430,6 @@ text-transform: uppercase;
 
 .bottom-nav-text.active {
 color: #E742F1;
-}
-
-/* Drone Delivery Main */
-
-.ssf-menu-enter {
-position:fixed;
-top:40px;
-}
-
-.menu-click {
-background-color:transparent;
-width:50%;
-height:32%;
-position:absolute;
-top:48%;
-left:50%;
-}
-
-/* Drone Delivery Menu Food */
-
-.food-name h4 {
-  font-family: Lato;
-  margin: 10px 0px 0px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 /* =======================================
