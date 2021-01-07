@@ -41,16 +41,16 @@ HEADER
 /* Preloader */
 
 .preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 414px;
     height: 896px;
     position: fixed;
     top: 40px;
     z-index: 10000;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .body {
