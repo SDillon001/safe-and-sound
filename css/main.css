@@ -44,7 +44,7 @@ HEADER
     width: 414px;
     height: 896px;
     position: fixed;
-    top: 0%;
+    top: 40px;
     z-index: 10000;
     background-color: black;
     display: flex;
