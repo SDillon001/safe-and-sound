@@ -42,6 +42,10 @@ HEADER
 .preloader {
   width: 414px;
   height: 896px;
+  position: relative;
+  top: 40px;
+  z-index: 2000;
+  background-color: black;
 }
 
 .body {
