@@ -21,7 +21,7 @@ $("flexContainer").ready(function() {
 // });
 
 // Update food quantity
-$( function() {
+$(function() {
     $('.food-container').click( function() {
         var num = $(this).find('.qty-icon');
         num.text( parseInt(num.text()) + 1 );
