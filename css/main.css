@@ -35,6 +35,10 @@ border: 1px solid red;
   src: url("fonts/Syncopate-Bold.ttf");
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+}
+
 /* =======================================
 HEADER
 ======================================= */
@@ -281,7 +285,8 @@ a#chat-link {
 
 .outer-scroll-drinks {
   display: flex;
-  height: 340px;
+  height: 342px;
+  background: #000;
 }
 
 .inner-scroll-drinks {
@@ -293,9 +298,10 @@ a#chat-link {
   grid-row-gap: 20px;
   padding: 5% 0%;
   overflow-y: scroll;
-  -ms-overflow-style: none; // IE 10+
-            scrollbar-width: none; // Firefox
-  display: none; // Safari and Chrome
+}
+
+.inner-scroll-drinks a {
+  text-decoration: none;
 }
 
 .drinks-menu {
@@ -307,7 +313,174 @@ a#chat-link {
   padding-left: 120px;
 }
 
-/* Food Screen */
+.drink-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    width: 170px;
+    height: 170px;
+    background-color: rgb(255 255 255 / .10);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.drink-icon {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 0% 0% 10%;
+  position:relative;
+  width: 100%;
+}
+
+.drink-title h4 {
+    font-size: 16px;
+    font-family: lato;
+    color: #fff !important;
+}
+
+.drink-title {
+  display: grid;
+  position: relative;
+  text-align: right;
+  padding: 0% 30% 0% 0%;
+  align-content: center;
+  align-items: center;
+}
+
+.drink-title h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: auto;
+}
+
+span.bold-cash {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bold-cash {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.qty-icon-drink {
+    top: 8px;
+    right: 5px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background-color: #E742F1;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Add to Order Panel */
+.add-order-panel.down {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 84px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 5px 0px rgb(255 255 255 / .6);
+  bottom: -90px;
+  z-index: 3000;
+  transition: all 400ms;
+}
+
+.add-order-panel.up {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 84px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 5px 0px rgb(255 255 255 / .6);
+  bottom: 0px;
+  z-index: 3000;
+  transition: all 400ms;
+}
+
+.order-buttons {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    padding: 5%;
+}
+
+.order-but-container.one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 40px;
+  background: #000;
+  margin: 0 auto;
+  border: double 2px transparent;
+  border-radius: 100px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(180deg, #FFFFFF 4.66%, #E742F1 47.56%, #FFFFFF 96.77%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.order-but-container.two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  background: #000;
+  margin: 0 auto;
+  border: double 2px transparent;
+  border-radius: 100px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(180deg, #FFFFFF 4.66%, #E742F1 47.56%, #FFFFFF 96.77%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.order-but-container.one h4, .order-but-container.two h4 {
+  margin: 0px;
+}
+
+.order-but-container:after {
+  border-radius: 100px;
+}
+
+.order-buttons a {
+  text-decoration: none;
+}
+
+.order-but-container h4 {
+  margin: 5px 0px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Food Screen (not used) */
 
 .outer-scroll-container {
   display: flex;
@@ -320,6 +493,7 @@ a#chat-link {
   grid-template-rows: repeat(auto, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  overflow-y: scroll;
 }
 
 .inner-scroll-container a {
@@ -410,7 +584,13 @@ a#chat-link {
   text-align: center;
 }
 
-/* Drone Delivery Menu Food Oreos */
+/* Drone Delivery Food Menu */
+
+.content-wrapper.scroll {
+    position: relative;
+    top: -18px;
+    height: 900px;
+}
 
 .food-container {
     display: flex;
@@ -470,7 +650,8 @@ a#chat-link {
 }
 
 .qty-icon {
-    left: 0;
+    top: 8px;
+    right: 5px;
     position: absolute;
     border-radius: 50%;
     padding: 5px;
@@ -481,7 +662,6 @@ a#chat-link {
     font-weight: 700;
     background-color: #000;
 }
-
 
 /* =======================================
 BOTTOM NAV MENU
