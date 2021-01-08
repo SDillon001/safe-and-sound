@@ -323,6 +323,7 @@ a#chat-link {
     height: 170px;
     background-color: rgb(255 255 255 / .10);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .drink-icon {
@@ -379,17 +380,31 @@ span.bold-cash {
     background-color: #E742F1;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* Add to Order Panel */
-.add-order-panel {
-    display: flex;
-    width: 100%;
-    height: 84px;
-    background: #000;
-    border-radius: 40px 50px 0px 0px;
-    box-shadow: 0px 0px 5px 0px rgb(255 255 255 / .6);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.add-order-panel.down {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 84px;
+  background: #000;
+  border-radius: 40px 50px 0px 0px;
+  box-shadow: 0px 0px 5px 0px rgb(255 255 255 / .6);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  bottom: -90px;
+}
+
+.add-order-panel.up {
+  bottom: 0px;
 }
 
 .order-buttons {
