@@ -35,3 +35,9 @@ $( function() {
         num.text( parseInt(num.text()) + 1 );
     });
 });
+
+$(function() { $('.food-container').click( function() { 
+    var num = $(this).find('.qty-icon'); 
+    num = num.text( parseInt(num.text()) + 1 ); 
+    num + otherVar + yetAnotherVar }); 
+});
