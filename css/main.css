@@ -35,6 +35,10 @@ border: 1px solid red;
   src: url("fonts/Syncopate-Bold.ttf");
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+}
+
 /* =======================================
 HEADER
 ======================================= */
@@ -307,7 +311,7 @@ a#chat-link {
   padding-left: 120px;
 }
 
-/* Food Screen */
+/* Food Screen (not used) */
 
 .outer-scroll-container {
   display: flex;
@@ -320,6 +324,7 @@ a#chat-link {
   grid-template-rows: repeat(auto, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  overflow-y: scroll;
 }
 
 .inner-scroll-container a {
@@ -410,7 +415,13 @@ a#chat-link {
   text-align: center;
 }
 
-/* Drone Delivery Menu Food Oreos */
+/* Drone Delivery Food Menu */
+
+.content-wrapper.scroll {
+    position: relative;
+    top: -18px;
+    height: 900px;
+}
 
 .food-container {
     display: flex;
