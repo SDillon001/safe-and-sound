@@ -286,6 +286,7 @@ a#chat-link {
 .outer-scroll-drinks {
   display: flex;
   height: 340px;
+  background: #000;
 }
 
 .inner-scroll-drinks {
@@ -297,9 +298,10 @@ a#chat-link {
   grid-row-gap: 20px;
   padding: 5% 0%;
   overflow-y: scroll;
-  -ms-overflow-style: none; // IE 10+
-            scrollbar-width: none; // Firefox
-  display: none; // Safari and Chrome
+}
+
+.inner-scroll-drinks a {
+  text-decoration: none;
 }
 
 .drinks-menu {
@@ -309,6 +311,67 @@ a#chat-link {
 .button-switch {
   background-color: black;
   padding-left: 120px;
+}
+
+.drink-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    width: 170px;
+    height: 170px;
+    background-color: rgb(255 255 255 / .10);
+    border-radius: 20px;
+}
+
+.drink-icon {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 0% 0% 10%;
+  position:relative;
+  width: 100%;
+}
+
+.drink-title h4 {
+    font-size: 16px;
+    font-family: lato;
+    color: #fff !important;
+}
+
+.drink-title {
+  display: grid;
+  position: relative;
+  text-align: right;
+  padding: 0% 30% 0% 0%;
+  align-content: center;
+  align-items: center;
+}
+
+.drink-title h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: auto;
+}
+
+span.bold-cash {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.qty-icon-drink {
+    top: 8px;
+    right: 5px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background-color: #E742F1;
 }
 
 /* Food Screen (not used) */
@@ -493,7 +556,6 @@ a#chat-link {
     font-weight: 700;
     background-color: #000;
 }
-
 
 /* =======================================
 BOTTOM NAV MENU
