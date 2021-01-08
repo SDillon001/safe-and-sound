@@ -39,6 +39,14 @@ border: 1px solid red;
     width: 0px;  /* Remove scrollbar space */
 }
 
+.food-container, .drink-container {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 /* =======================================
 HEADER
 ======================================= */
