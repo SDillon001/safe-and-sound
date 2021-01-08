@@ -273,6 +273,17 @@ a#chat-link {
   bottom: 40px;
 }
 
+/* send-food-1 */
+
+.main-container-chat {
+  overflow: auto;
+}
+
+.button-switch {
+  background-color: black;
+  padding-left: 120px;
+}
+
 /* Food Screen */
 
 .outer-scroll-container {
