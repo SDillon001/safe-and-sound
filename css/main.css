@@ -279,7 +279,26 @@ a#chat-link {
 
 /* send-food-1 */
 
-.main-container-chat {
+.outer-scroll-drinks {
+  display: flex;
+  height: 340px;
+}
+
+.inner-scroll-drinks {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 5% 0%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; // IE 10+
+            scrollbar-width: none; // Firefox
+  display: none; // Safari and Chrome
+}
+
+.drinks-menu {
   overflow: auto;
 }
 
