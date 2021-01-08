@@ -374,18 +374,46 @@ a#chat-link {
 
 /* Drone Delivery Menu Food Oreos */
 
-.food-name {
-  font-family: Lato;
-  margin: 10px 0px 0px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
+.food-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    background-color: rgb(255 255 255 / .10);
+    border-radius: 20px;
 }
 
-.food-name h4 {
-  list-style: none;
+.food-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+}
+
+.food-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.food-title.left, .food-title.right {
+    width: 50%;
+}
+
+.food-title.left {
+  text-align: left;
+  padding: 0% 5%;
+}
+
+.food-title.right {
+  text-align: right;
+  padding: 0% 0% 0% 15%;
 }
 
 /* =======================================
