@@ -326,6 +326,17 @@ a#chat-link {
     cursor: pointer;
 }
 
+.grid-spacer {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    width: 170px;
+    height: 40px;
+
+}
+
 .drink-icon {
   display: grid;
   align-items: center;
@@ -389,6 +400,7 @@ span.bold-cash {
 }
 
 /* Add to Order Panel */
+
 .add-order-panel.down {
   position: absolute;
   display: flex;
@@ -400,6 +412,7 @@ span.bold-cash {
   bottom: -90px;
   z-index: 3000;
   transition: all 400ms;
+  display: none;
 }
 
 .add-order-panel.up {
@@ -588,7 +601,6 @@ span.bold-cash {
 
 .content-wrapper.scroll {
     position: relative;
-    top: -18px;
     height: 900px;
 }
 
@@ -601,6 +613,7 @@ span.bold-cash {
     height: 170px;
     background-color: rgb(255 255 255 / .10);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .food-icon {
@@ -730,6 +743,11 @@ BOTTOM NAV MENU
 .bot-link-icon {
   display: block;
   width: 24px;
+}
+
+.bot-link.food .bot-link-icon {
+  display: block;
+  width: 28px;
 }
 
 .bot-link-container {
