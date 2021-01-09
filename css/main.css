@@ -35,6 +35,17 @@ border: 1px solid red;
   src: url("fonts/Syncopate-Bold.ttf");
 }
 
+@font-face {
+  font-family: Lato-Regular;
+  src: url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  font-weight: bold;
+  src: url("fonts/Lato-Bold.ttf");
+}
+
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
 }
@@ -221,29 +232,34 @@ HEADER
 
 /* User Profile */
 
+.content-wrapper.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-title {
   display: flex;
   justify-content: center;
-  font-family: Syncopate-Regular, Arial, Helvetica, sans-serif;
   color: #fff;
+  padding-bottom: 10%;
 }
 
-.user-title h4 {
+.user-title h3 {
+  font-family: Syncopate-Bold;
   margin: 0 auto;
 }
 
 .user-profile-image {
-  position: absolute;
-  top: 45px;
-  left: 15px;
+  padding-bottom: 10%;
 }
 
-.message-feed-button {
-  z-index: 1000;
-  position: absolute;
-  left: 55px;
-  top: 500px;
+.menu-but-container.user h4 {
+    font-size: 16px;
+    letter-spacing: 1px;
 }
+
 /* User Chat-1 */
 
 .user-chat-wrapper {
@@ -416,11 +432,11 @@ span.bold-cash {
   height: 84px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  /* box-shadow: 0px -2px 4px rgb(255 255 255 / .6); */
   bottom: 40px;
-  z-index: 3000;
+  z-index: 10000;
   transition: all 400ms;
-  /* display: none; */
+  display: none;
 }
 
 .add-order-panel.up {
@@ -430,9 +446,9 @@ span.bold-cash {
   height: 84px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  /* box-shadow: 0px -2px 4px rgb(255 255 255 / .6); */
   bottom: 0px;
-  z-index: 3000;
+  z-index: 10000;
   transition: all 400ms;
 }
 
@@ -508,9 +524,8 @@ span.bold-cash {
   height: 84px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
   bottom: 40px;
-  z-index: 3000;
+  z-index: 10000;
   transition: all 400ms;
   display: none;
 }
@@ -523,12 +538,22 @@ span.bold-cash {
   background: #000;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
-  bottom: 40px;
+  bottom: 0px;
   z-index: 3000;
   transition: all 400ms;
 }
 
 /* Confirm Order Panel */
+
+.homeIndicator {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
 
 hr#indicator-bar {
     height: 5px;
@@ -536,7 +561,6 @@ hr#indicator-bar {
     margin: 0 auto;
     border-radius: 100px;
     border: 0;
-    border-top: 1px solid #ccc;
     background: #50555C;
 }
 
@@ -545,10 +569,9 @@ hr#indicator-bar {
   display: flex;
   flex-direction: column;
   width: 414px;
-  height: 400px;
+  height: 390px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
   bottom: 40px;
   z-index: 3000;
   transition: all 400ms;
@@ -560,12 +583,11 @@ hr#indicator-bar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400px;
+  height: 390px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
   bottom: 40px;
-  z-index: 3000;
+  z-index: 10000;
   transition: all 400ms;
 }
 
@@ -573,31 +595,123 @@ hr#indicator-bar {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: 50px;
+    grid-auto-rows: 120px;
     grid-column-gap: 0px;
     padding: 0% 5%;
+    height: 310px;
 }
 
-.item-column.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 114px;
-  height: 400px;
-  background: #000;
-  margin: 0 auto;
+.grid-item h4 {
+  font-size: 14px;
+  font-family: Lato-Regular;
+  color: #fff !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
-.item-column.right {
+.grid-item {
+    margin: 0 auto;
+}
+
+.grid-item.row2, .grid-item.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-label h4 {
+  font-size: 18px;
+  font-family: Lato-Bold;
+  color: #fff !important;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.item-label h2 {
+  font-size: 3em;
+  font-family: Lato-Regular;
+  color: #fff !important;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0px;
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-icon img {
+    width: 70%;
+}
+
+/* Order Received Panel */
+.order-received-panel.down {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 220px;
-  height: 400px;
+  width: 414px;
+  height: 320px;
   background: #000;
-  margin: 0 auto;
+  border-radius: 20px 20px 0px 0px;
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+  /* display: none; */
+}
+
+.order-received-panel.up {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 320px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  bottom: 40px;
+  z-index: 10000;
+  transition: all 400ms;
+}
+
+.order-received-panel {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px;
+    grid-auto-rows: 120px;
+    grid-column-gap: 0px;
+}
+
+.order-received-panel .grid-item.row1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.item-label.rec-title {
+    margin-left: 10%;
+}
+
+.item-label.rec-title h4 {
+    font-family: Syncopate;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.item-icon.drone {
+    padding-top: 40%;
+}
+
+.item-icon.drone img {
+    width: 100%;
 }
 
 /* Food Screen (not used) */
@@ -694,7 +808,7 @@ hr#indicator-bar {
 }
 
 .menu-but-container h4 {
-  font-family: Syncopate-Regular;
+  font-family: Syncopate-Bold;
   margin: 5px 0px 0px;
   color: #fff;
   font-size: 14px;
@@ -780,7 +894,7 @@ hr#indicator-bar {
     text-align: center;
     color: #fff;
     font-weight: 700;
-    background-color: #000;
+    background-color: #E742F1;
 }
 
 /* =======================================
@@ -836,7 +950,6 @@ BOTTOM NAV MENU
 }
 
 .bot-link {
-  padding: 18px 0px;
   background-color: transparent;
   position: fixed;
   display: block;
@@ -936,6 +1049,11 @@ MEDIA QUERIES
   .food-menu-gif img {
     width: 83%;
   }
+
+  /* Order button panel */
+.add-order-panel.down {
+    bottom: 0px;
+}
 }
 
 @media screen and (max-width: 479px) {

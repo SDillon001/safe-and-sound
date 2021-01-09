@@ -41,8 +41,8 @@
                                 <h4>Pizza</h4>
                             </div>
 
-                            <div class="food-title right" id="pizza-price">
-                                <h4>$5</h4>
+                            <div class="food-title right">
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     <!-- Fries -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/fries.png" alt="">
                         </div>
 
@@ -78,7 +78,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                     <!-- Salad -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/salad.png" alt="">
                         </div>
 
@@ -96,7 +96,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                     <!-- Sliders -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/sliders.png" alt="">
                         </div>
 
@@ -114,7 +114,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                     <!-- Hot Dog -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/hot-dog.png" alt="">
                         </div>
 
@@ -132,7 +132,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                     <!-- Sushi -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/sushi.png" alt="">
                         </div>
 
@@ -150,7 +150,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                     <!-- Sandwich -->
                     <div class="food-container">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <!-- <div class="qty-icon">0</div> -->
                             <img src="images/food/icons/sandwich.png" alt="">
                         </div>
 
@@ -168,7 +168,7 @@
                             </div>
 
                             <div class="food-title right">
-                                <h4>$5</h4>
+                                <h4 class="price">$5</h4>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                         </div>
 
                         <div>
-                            <h4><span class="bold-cash" id="total">$0</span></h4>
+                            <h4><span id="total" class="bold-cash" id="total">$0</span></h4>
                         </div>
                     </div>
                 </a>
@@ -232,23 +232,91 @@
             <!-- Panel Columns -->
             <div class="confirm-panel-wrapper">
                 <div class="confirm-panel">
-                    <div class="item-column left">
-                        <img src="images/food/icons/pizza.png" alt="">
-                        <h4>Sandwich</h4>
+                    
+                    <!-- grid-item row1-col1 -->
+                    <div class="grid-item row1 col1">
+                        <div class="item-label">
+                            <h4>Item</h4>
+                        </div>
                     </div>
 
-                    <div class="item-column right">
-                        <div class="order-label">
-                            <h4>Confirm Order</h4>
+                    <!-- grid-item row1-col2 -->
+                    <div class="grid-item row1 col2">
+                        <div class="item-label">
+                            <h4>QTY</h4>
                         </div>
+                    </div>
 
-                        <div>
-                            <h4><span class="bold-cash">$0</span></h4>
+                    <!-- grid-item row2-col1 -->
+                    <div class="grid-item row2 col1">
+                        <div class="item-descr">
+                            <div class="item-icon">
+                                <img src="images/food/icons/pizza.png" alt="">
+                            </div>
+                            <h4>Pizza</h4>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row2-col2 -->
+                    <div class="grid-item row2 col2">
+                        <div class="item-label">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row3-col1 -->
+                    <div class="grid-item row3 col1">
+                        <div class="item-descr">
+                            <div class="item-icon">
+                            <img src="images/food/icons/burger.png" alt="">
+                            </div>
+                            <h4>Burger</h4>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row3-col2 -->
+                    <div class="grid-item row3 col2">
+                        <div class="item-label">
+                            <h2>- 1 +</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Order Received Panel -->
+        <div class="order-received-panel down">
+            <!-- Panel Columns -->
+            <div class="order-received-panel-wrapper">
+                <div class="order-received-panel">
+        
+                    <!-- grid-item row1-col1 -->
+                    <div class="grid-item row1 col1">
+                        <div class="item-label rec-title">
+                            <h4>ORDER RECEIVED</h4>
+                        </div>
+
+                        <div class="item-label close">
+                            <img src="images/close-icon.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- grid-item row2-col1 -->
+                    <div class="grid-item row2 col1">
+                        <div class="drone-graphic">
+                            <div class="item-icon drone">
+                                <img src="images/drone-illustration.png" alt="">
+                            </div>
+
+                            <div class="drone-descr">
+                                <h4>Your order will be delivered<br> within 15 minutes, enjoy!</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Bottom Navigation Menu -->
         <div class="bottom-nav">
