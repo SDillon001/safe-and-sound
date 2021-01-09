@@ -9,10 +9,10 @@ $("flexContainer").ready(function() {
 })
 
 // Drinks qty and order panel
-// $('div.drink-container').click(function() {
-//     $('div.qty-icon-drink', this).toggleClass('show hide');
-//     $('div.add-order-panel').toggleClass('up down');
-// });
+$('div.drink-container').click(function() {
+    $('div.qty-icon-drink', this).toggleClass('show hide');
+    $('div.add-order-panel').toggleClass('up down');
+});
 
 // Food qty and order panel
 // $('div.food-container').click(function() {

@@ -420,6 +420,7 @@ span.bold-cash {
   bottom: 40px;
   z-index: 3000;
   transition: all 400ms;
+  /* display: none; */
 }
 
 .add-order-panel.up {
@@ -498,6 +499,105 @@ span.bold-cash {
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+}
+
+.confirm-order-button.down {
+  position: fixed;
+  display: flex;
+  width: 414px;
+  height: 84px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+  /* display: none; */
+}
+
+.confirm-order-button.up {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+}
+
+/* Confirm Order Panel */
+
+hr#indicator-bar {
+    height: 5px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    background: #50555C;
+}
+
+.confirm-order-panel.down {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  height: 400px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+  display: none;
+}
+
+.confirm-order-panel.up {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+}
+
+.confirm-panel {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    padding: 0% 5%;
+}
+
+.item-column.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 400px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.item-column.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 400px;
+  background: #000;
+  margin: 0 auto;
 }
 
 /* Food Screen (not used) */
