@@ -176,8 +176,8 @@ HEADER
   grid-column-gap: 13px;
   grid-row-gap: 11px;
   position: relative;
-  right: -45px;
-  top: 23px;
+  right: -49px;
+  top: 25px;
 }
 
 .map-zoom-bg {
@@ -1054,6 +1054,7 @@ MEDIA QUERIES
 .add-order-panel.down {
     bottom: 0px;
 }
+
 }
 
 @media screen and (max-width: 479px) {
