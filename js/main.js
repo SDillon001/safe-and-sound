@@ -35,7 +35,7 @@ $(function() {
         console.log(num);
 
         var price = price + price_pizza;
-        document.getElementById("total").innerHTML = price;
+        document.getElementById("total").innerHTML = "$" + price;
         console.log(price);
 
         var qty = 1;
