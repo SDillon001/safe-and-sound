@@ -936,6 +936,14 @@ MEDIA QUERIES
   .food-menu-gif img {
     width: 83%;
   }
+
+    /* add-order-panel move down  */
+.add-order-panel.down{
+  bottom: 0px;
+}
+
+
+
 }
 
 @media screen and (max-width: 479px) {
