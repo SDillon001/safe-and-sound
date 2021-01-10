@@ -134,6 +134,20 @@ HEADER
   background-image: url(images/map-zoom-in-bg.png);
 }
 
+.main-container.send-food {
+    position: relative;
+    top: 40px;
+    overflow: hidden;
+    width: 414px;
+    height: 896px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(images/bg-blur-overlay-v2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .top-nav {
   position: sticky;
   left: 0%;
@@ -305,6 +319,39 @@ a#chat-link {
   bottom: 40px;
 }
 
+.confirm-order-panel.down {
+  position: fixed;
+  width: 414px;
+  height: 390px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  bottom: 40px;
+  z-index: 3000;
+  transition: all 400ms;
+  /* display: none; */
+}
+
+.confirm-order-panel.up {
+  position: absolute;
+  width: 100%;
+  height: 390px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  bottom: 40px;
+  z-index: 10000;
+  transition: all 400ms;
+}
+
+.confirm-panel.food {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px;
+    grid-auto-rows: 120px;
+    grid-column-gap: 0px;
+    padding: 5%;
+}
+
 /* send-food-1 */
 
 .outer-scroll-drinks {
@@ -344,7 +391,7 @@ a#chat-link {
     grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 0px;
     width: 170px;
-    height: 170px;
+    height: 130px;
     background-color: rgb(255 255 255 / .10);
     border-radius: 20px;
     cursor: pointer;
@@ -357,7 +404,7 @@ a#chat-link {
     grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 0px;
     width: 170px;
-    height: 40px;
+    height: 100px;
 
 }
 
@@ -380,7 +427,7 @@ a#chat-link {
   display: grid;
   position: relative;
   text-align: right;
-  padding: 0% 30% 0% 0%;
+  padding: 25% 30% 0% 0%;
   align-content: center;
   align-items: center;
 }
@@ -388,7 +435,7 @@ a#chat-link {
 .drink-title h4 {
   text-transform: uppercase;
   font-weight: 100;
-  margin-top: auto;
+  margin: 0px;
 }
 
 span.bold-cash {
@@ -429,36 +476,41 @@ span.bold-cash {
   position: fixed;
   display: flex;
   width: 414px;
-  height: 84px;
+  height: 70px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  /* box-shadow: 0px -2px 4px rgb(255 255 255 / .6); */
   bottom: 40px;
   z-index: 10000;
   transition: all 400ms;
-  display: none;
+  -webkit-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  /* display: none; */
 }
 
 .add-order-panel.up {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 84px;
+  height: 70px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  /* box-shadow: 0px -2px 4px rgb(255 255 255 / .6); */
   bottom: 0px;
   z-index: 10000;
   transition: all 400ms;
+  -webkit-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
 }
 
 .order-buttons {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: 120px;
+    grid-auto-rows: 120px;
     grid-column-gap: 0px;
-    padding: 5%;
+    padding: 3% 5%;
 }
 
 .order-but-container.one {
@@ -521,7 +573,7 @@ span.bold-cash {
   position: fixed;
   display: flex;
   width: 414px;
-  height: 84px;
+  height: 70px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
   bottom: 40px;
@@ -531,10 +583,10 @@ span.bold-cash {
 }
 
 .confirm-order-button.up {
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 70px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px -2px 4px rgb(255 255 255 / .6);
@@ -564,26 +616,27 @@ hr#indicator-bar {
     background: #50555C;
 }
 
-.confirm-order-panel.down {
+.confirm-order-panel.drinks.down {
   position: fixed;
   display: flex;
   flex-direction: column;
   width: 414px;
-  height: 390px;
+  height: 355px;
+  padding: 1.5% 0% 0%;
   background: #000;
   border-radius: 20px 20px 0px 0px;
   bottom: 40px;
   z-index: 3000;
   transition: all 400ms;
-  display: none;
+  /* display: none; */
 }
 
-.confirm-order-panel.up {
+.confirm-order-panel.drinks.up {
   position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 390px;
+  height: 355px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
   bottom: 40px;
@@ -591,15 +644,16 @@ hr#indicator-bar {
   transition: all 400ms;
 }
 
-.confirm-panel {
+.confirm-panel.drinks {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px;
+    grid-template-rows: 120px;
     grid-auto-rows: 120px;
     grid-column-gap: 0px;
+    align-items: center;
+    justify-content: center;
     padding: 0% 5%;
-    height: 310px;
 }
 
 .grid-item h4 {
@@ -662,7 +716,7 @@ hr#indicator-bar {
   bottom: 40px;
   z-index: 3000;
   transition: all 400ms;
-  /* display: none; */
+  display: none;
 }
 
 .order-received-panel.up {
