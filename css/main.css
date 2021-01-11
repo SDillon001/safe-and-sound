@@ -61,6 +61,118 @@ border: 1px solid red;
 /* =======================================
 HEADER
 ======================================= */
+
+.header {
+    position: sticky;
+    width: 414px;
+    height: 145px;
+    z-index: 3000;
+    background-image: url(images/bg-blur-overlay-v2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url(images/top-bar.png);
+    filter: drop-shadow(0px 30px 20px rgba(255, 255, 255, 0.1));
+}
+
+.topbar {
+    display: grid;
+    margin: 0 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 44px;
+    grid-auto-rows: 63px;
+    grid-column-gap: 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .grid-item-header {
+    border: 1px solid red;
+} */
+
+.grid-item-header.row1.col1 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: left;
+}
+
+.grid-item-header.row2.col1 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: left;
+}
+
+.grid-item-header.row1.col4 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: right;
+}
+
+.grid-item-header.row2.col2-4 {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.grid-item-header.row2.col2-3 {
+    grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-header.row2.col4 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 60px;
+    padding: 0% 8% 0% 8%;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.search-title {
+    color: #50555C;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+}
+
+.status-icons {
+    margin-right: -9px;
+}
+
+.back-carat {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.back-carat h5 {
+    margin-left: 5px;
+    color: #fff;
+    font-family: Lato-Regular;
+}
+
+a.grid-item-header.row2.col1 {
+    text-decoration: none;
+}
+
+/* =======================================
+HOME
+======================================= */
 /* Preloader */
 
 .preloader {
@@ -159,6 +271,7 @@ HEADER
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+  display: none;
 }
 
 /* Map Screen */
@@ -815,6 +928,10 @@ hr#indicator-bar {
   justify-content: flex-start;
   align-items: center;
   margin: 0 30px;
+}
+
+.food-menu-title.delivery-main {
+    margin: -30px 30px;
 }
 
 .food-menu-title img {
