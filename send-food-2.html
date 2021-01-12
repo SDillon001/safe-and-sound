@@ -11,26 +11,43 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="images/favicon.png" rel="apple-touch-icon">
-    <style>
-        .main-container {
-            -ms-overflow-style: none; // IE 10+
-            scrollbar-width: none; // Firefox
-        }
-
-        .main-container::-webkit-scrollbar {
-            display: none; // Safari and Chrome
-        }
-    </style>
 </head>
 
 <body class="body">
-    <div class="main-container">
+    <div class="main-container send-food">
         <!-- Top Navigation -->
-        <a href="https://SDillon001.github.io/safe-and-sound/index.html">
-            <div class="top-nav">
-                <img src="https://SDillon001.github.io/safe-and-sound/images/header-bar-w-user.png">
+        <div class="header">
+            <div class="topbar">
+                <!-- Row 1 Col 1 -->
+                <div class="grid-item-header row1 col1">
+                    <img src="images/header/time.png" alt="">
+                </div>
+
+                <div class="grid-item-header row1 col2"></div>
+                <div class="grid-item-header row1 col3"></div>
+                <div class="grid-item-header row1 col4">
+                    <div class="status-icons">
+                        <img src="images/header/mobile_signal.png" alt="">
+                        <img src="images/header/wifi.png" alt="">
+                        <img src="images/header/battery.png" alt="">
+                    </div>
+                </div>
+
+                <a class="grid-item-header row2 col1" href="https://SDillon001.github.io/safe-and-sound/index.html">
+                    <div>
+                        <img src="images/header/s&s-logo-only.png" alt="">
+                    </div>
+                </a>
+
+                <div class="grid-item-header row2 col2-3">
+                    <img src="images/header/user-avatar.png" alt="">
+                </div>
+
+                <div class="grid-item-header row2 col4">
+                    <img src="images/header/search-icon-white.png" alt="">
+                </div>
             </div>
-        </a>
+        </div>
 
         <div class="user-chat-wrapper">
             <div class="user-chat-title">
@@ -60,11 +77,207 @@
             </div>
         </div>
 
-        <!-- Keyboard -->
-        <div class="keyboard-input">
-            <a href="send-food-3.html">
-                <img src="images/chat/send-food2-bottom.png">
-            </a>
+        <!-- Start Drinks Menu -->
+        <div class="drinks-menu">
+            <div class="drinks-menu-inner">
+                <div class="input-section">
+                    <div>
+                        <img src="images/drinks/input-w-switch.png" alt="Chat icons">
+                    </div>
+                </div>
+
+                <!-- Scroll Starts here -->
+                <div class="outer-scroll-drinks">
+                    <div class="inner-scroll-drinks">
+                        <!--Drink #1-->
+                        <div class="drink-container">
+                            <div class="drink-icon">
+                                <img src="images/drinks/mojito.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <div class="qty-icon-drink hide">1</div>
+                                <h4>Mojito</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #2-->
+                        <div class="drink-container">
+                            <div class="drink-icon">
+                                <img src="images/drinks/draft-beer.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <!-- <div class="qty-icon-drink">0</div> -->
+                                <h4>805 Draft</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #3-->
+                        <div class="drink-container">
+                            <div class="drink-icon">
+                                <img src="images/drinks/teq-sunrise.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <!-- <div class="qty-icon-drink">0</div> -->
+                                <h4>Tequila Sunrise</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #4-->
+                        <div class="drink-container marg">
+                            <div class="drink-icon">
+                                <img src="images/drinks/margarita.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <div class="qty-icon-drink hide">1</div>
+                                <h4>Marg<br>arita</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #5-->
+                        <div class="drink-container">
+                            <div class="drink-icon">
+                                <img src="images/drinks/adios-mf.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <!-- <div class="qty-icon-drink">0</div> -->
+                                <h4>Adios MF</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #6-->
+                        <div class="drink-container">
+                            <div class="drink-icon">
+                                <img src="images/drinks/purple-haze.png" alt="Mojito">
+                            </div>
+
+                            <div class="drink-title">
+                                <!-- <div class="qty-icon-drink">0</div> -->
+                                <h4>Purple Haze</h4>
+                                <h4><span class="bold-cash">$6</span></h4>
+                            </div>
+                        </div>
+
+                        <!--Drink #7-->
+                        <div class="grid-spacer">
+
+                        </div>
+
+                        <!--Drink #8-->
+                        <div class="grid-spacer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Drinks Menu Inner -->
+        </div>
+        <!-- End Drinks Menu -->
+
+        <div class="add-order-panel up">
+            <!-- Order Buttons -->
+            <div class="order-buttons">
+                <div class="order-but-container one">
+                    <h4><span class="bold-cash">2</span> <span id="update-item">Items</span></h4>
+                </div>
+                </a>
+
+                <div class="order-but-container two">
+                    <div class="order-label">
+                        <h4 id="confirm-update">Confirm Order</h4>
+                    </div>
+
+                    <div>
+                        <h4><span class="bold-cash" id="total">$12</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Update Drinks Quantity Panel -->
+        <div class="confirm-order-panel drinks down">
+            <!-- Panel Columns -->
+            <div class="confirm-panel-wrapper">
+                <div class="confirm-panel drinks">
+
+                    <!-- grid-item row1-col1 -->
+                    <div class="grid-item row1 col1">
+                        <div class="item-descr">
+                            <div class="item-icon">
+                                <img src="images/drinks/mojito.png" alt="">
+                            </div>
+                            <h4>Pizza</h4>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row1-col2 -->
+                    <div class="grid-item row1 col2">
+                        <div class="item-label">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row3-col1 -->
+                    <div class="grid-item row3 col1">
+                        <div class="item-descr">
+                            <div class="item-icon">
+                                <img src="images/drinks/margarita.png" alt="">
+                            </div>
+                            <h4>Burger</h4>
+                        </div>
+                    </div>
+
+                    <!-- grid-item row3-col2 -->
+                    <div class="grid-item row3 col2">
+                        <div class="item-label">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Received Panel -->
+        <div class="order-received-drinks-panel down">
+            <!-- Panel Columns -->
+            <div class="order-received-panel-wrapper">
+                <div class="order-received-drinks-inner-panel">
+        
+                    <!-- grid-item row1-col1 -->
+                        <div class="grid-item row1 col1">
+                            <div class="item-label rec-title">
+                                <h4>ORDER RECEIVED</h4>
+                            </div>
+                        <a href="user-chat-1.html">
+                            <div class="item-label close">
+                                <img src="images/close-icon.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+        
+                    <!-- grid-item row2-col1 -->
+                    <div class="grid-item row2 col1">
+                        <div class="drone-graphic">
+                            <div class="item-icon drone">
+                                <img src="images/drone-illustration.png" alt="">
+                            </div>
+        
+                            <div class="drone-descr">
+                                <h4>Your order will be delivered<br> within 15 minutes, enjoy!</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
