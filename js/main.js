@@ -42,7 +42,7 @@ $('div.drink-container').click(function() {
 });
 
 // Add to Order Button Update
-$('div.drink-container.marg').click(function() {
+$('div.drink-container.draft').click(function() {
   // Update item total
   $(".order-but-container.one .bold-cash").text(2);
   $(".order-but-container.one #update-item").text('Items');
@@ -50,7 +50,7 @@ $('div.drink-container.marg').click(function() {
 });
 
 // Order Received Animation Up
-$('div.order-buttons').click(function() {
+$('div.order-but-container.two.confirm').click(function() {
     $('div.add-order-panel').removeClass('up');
     $('div.add-order-panel').addClass('down');
     $('div.order-received-drinks-panel').removeClass('down');

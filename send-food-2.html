@@ -191,9 +191,9 @@
                 </div>
                 </a>
 
-                <div class="order-but-container two">
+                <div class="order-but-container two confirm">
                     <div class="order-label">
-                        <h4 id="confirm-update">Confirm Order</h4>
+                        <h4 id="confirm-update">Send Order</h4>
                     </div>
 
                     <div>
@@ -204,38 +204,44 @@
         </div>
 
         <!-- Update Drinks Quantity Panel -->
-        <div class="confirm-order-panel drinks down">
+        <div class="confirm-order-panel drinks up">
             <!-- Panel Columns -->
             <div class="confirm-panel-wrapper">
                 <div class="confirm-panel drinks">
-
-                    <!-- grid-item row1-col1 -->
-                    <div class="grid-item row1 col1">
-                        <div class="item-descr">
-                            <div class="item-icon">
-                                <img src="images/drinks/mojito.png" alt="">
-                            </div>
-                            <h4>Pizza</h4>
+        
+                    <!--Drink #1-->
+                    <div class="confirm-drink-container">
+                        <div class="confirm-drink-icon">
+                            <img src="images/drinks/mojito.png" alt="Mojito">
+                        </div>
+        
+                        <div class="drink-title">
+                            <div class="qty-icon-drink hide">1</div>
+                            <h4>Mojito</h4>
+                            <h4><span class="bold-cash">$6</span></h4>
                         </div>
                     </div>
-
+        
                     <!-- grid-item row1-col2 -->
                     <div class="grid-item row1 col2">
                         <div class="item-label">
                             <h2>- 1 +</h2>
                         </div>
                     </div>
-
-                    <!-- grid-item row3-col1 -->
-                    <div class="grid-item row3 col1">
-                        <div class="item-descr">
-                            <div class="item-icon">
-                                <img src="images/drinks/margarita.png" alt="">
-                            </div>
-                            <h4>Burger</h4>
+        
+                    <!--Drink #2-->
+                    <div class="confirm-drink-container draft">
+                        <div class="confirm-drink-icon">
+                            <img src="images/drinks/draft-beer.png" alt="Mojito">
+                        </div>
+        
+                        <div class="drink-title">
+                            <div class="qty-icon-drink hide">1</div>
+                            <h4>805 Draft</h4>
+                            <h4><span class="bold-cash">$6</span></h4>
                         </div>
                     </div>
-
+        
                     <!-- grid-item row3-col2 -->
                     <div class="grid-item row3 col2">
                         <div class="item-label">
@@ -272,7 +278,7 @@
                             </div>
         
                             <div class="drone-descr">
-                                <h4>Your order will be delivered<br> within 15 minutes, enjoy!</h4>
+                                <h4>Your order will be delivered to <br><span id="drink-name">ANDY007</span> within 15 minutes, enjoy!</h4>
                             </div>
                         </div>
                     </div>
