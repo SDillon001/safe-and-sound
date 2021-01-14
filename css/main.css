@@ -786,7 +786,7 @@ hr#indicator-bar {
     grid-column-gap: 0px;
     align-items: center;
     justify-content: center;
-    padding: 0% 5%;
+    padding: 5% 5%;
 }
 
 .confirm-drink-container {
@@ -902,10 +902,9 @@ hr#indicator-bar {
   height: 275px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  bottom: -200px;
+  bottom: -250px;
   z-index: 3000;
   transition: all 300ms;
-  display: none;
 }
 
 .order-received-drinks-panel.up {
@@ -919,6 +918,10 @@ hr#indicator-bar {
   bottom: 0px;
   z-index: 3000;
   transition: all 300ms;
+}
+
+.order-received-panel-wrapper a {
+    text-decoration: none;
 }
 
 .order-received-drinks-inner-panel {
