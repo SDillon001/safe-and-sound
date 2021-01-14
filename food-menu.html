@@ -16,13 +16,13 @@
 <body class="body">
     <div class="main-container">
         <!-- Top Navigation -->
-        <div class="header">
+        <div class="header food">
             <div class="topbar">
                 <!-- Row 1 Col 1 -->
                 <div class="grid-item-header row1 col1">
                     <img src="images/header/time.png" alt="">
                 </div>
-        
+
                 <div class="grid-item-header row1 col2"></div>
                 <div class="grid-item-header row1 col3"></div>
                 <div class="grid-item-header row1 col4">
@@ -32,11 +32,11 @@
                         <img src="images/header/battery.png" alt="">
                     </div>
                 </div>
-        
+
                 <div class="grid-item-header row2 col1">
                     <img src="images/header/s&s-logo-only.png" alt="">
                 </div>
-        
+
                 <div class="grid-item-header row2 col2-4">
                     <div class="search-container">
                         <div class="search-title">
@@ -61,7 +61,7 @@
                     <!-- Pizza -->
                     <div class="food-container" id="box1">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <div class="qty-icon hide">1</div>
                             <img src="images/food/icons/pizza.png" alt="">
                         </div>
 
@@ -77,9 +77,9 @@
                     </div>
 
                     <!-- Burger -->
-                    <div class="food-container">
+                    <div class="food-container burger">
                         <div class="food-icon">
-                            <div class="qty-icon">0</div>
+                            <div class="qty-icon hide">1</div>
                             <img src="images/food/icons/burger.png" alt="">
                         </div>
 
@@ -209,20 +209,18 @@
         <div class="add-order-panel down">
             <!-- Order Buttons -->
             <div class="order-buttons">
-                <a href="#">
-                    <div class="order-but-container one">
-                        <h4><span class="bold-cash" id="items">0</span> Items</h4>
-                    </div>
-                </a>
+                <div class="order-but-container one">
+                    <h4><span class="bold-cash" id="items">1</span> <span id="update-item">Item</span></h4>
+                </div>
 
-                <a href="#">
+                <a href="food-menu-2.html">
                     <div class="order-but-container two">
                         <div class="order-label">
                             <h4>Add to Order</h4>
                         </div>
 
                         <div>
-                            <h4><span id="total" class="bold-cash" id="total">$0</span></h4>
+                            <h4><span id="total" class="bold-cash" id="total">$5</span></h4>
                         </div>
                     </div>
                 </a>
@@ -242,7 +240,7 @@
                 <a href="#">
                     <div class="order-but-container two">
                         <div class="order-label">
-                            <h4>Confirm Order</h4>
+                            <h4>Add to Order</h4>
                         </div>
 
                         <div>
@@ -282,7 +280,7 @@
                     <div class="grid-item row3 col1">
                         <div class="item-descr">
                             <div class="item-icon">
-                            <img src="images/food/icons/burger.png" alt="">
+                                <img src="images/food/icons/burger.png" alt="">
                             </div>
                             <h4>Burger</h4>
                         </div>
@@ -298,42 +296,8 @@
             </div>
         </div>
 
-        <!-- Order Received Panel -->
-        <div class="order-received-panel down">
-            <!-- Panel Columns -->
-            <div class="order-received-panel-wrapper">
-                <div class="order-received-panel">
-        
-                    <!-- grid-item row1-col1 -->
-                    <div class="grid-item row1 col1">
-                        <div class="item-label rec-title">
-                            <h4>ORDER RECEIVED</h4>
-                        </div>
-
-                        <div class="item-label close">
-                            <img src="images/close-icon.png" alt="">
-                        </div>
-                    </div>
-
-                    <!-- grid-item row2-col1 -->
-                    <div class="grid-item row2 col1">
-                        <div class="drone-graphic">
-                            <div class="item-icon drone">
-                                <img src="images/drone-illustration.png" alt="">
-                            </div>
-
-                            <div class="drone-descr">
-                                <h4>Your order will be delivered<br> within 15 minutes, enjoy!</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- Bottom Navigation Menu -->
-        <div class="bottom-nav">
+        <div class="bottom-nav show">
             <div class="bottom-menu">
                 <a class="bot-link">
                     <div class="bot-link-container">

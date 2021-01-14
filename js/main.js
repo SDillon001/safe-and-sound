@@ -23,6 +23,20 @@
 //   });
 // });
 
+// Food qty and order panel
+// $('div.food-container').click(function() {
+//     $('div.qty-icon', this).toggleClass('show hide');
+//     $('div.add-order-panel').toggleClass('up down');
+// });
+
+// Update drink quantity
+// $(function() {
+//     $('.drink-container').click( function() {
+//         var num = $(this).find('.qty-icon-drink');
+//         num.text( parseInt(num.text()) + 1 );
+//     });
+// });
+
 // Preloader
 
 function fade() {
@@ -58,16 +72,38 @@ $('div.order-but-container.two.confirm').click(function() {
 });
 
 // Food qty and order panel
-// $('div.food-container').click(function() {
-//     $('div.qty-icon', this).toggleClass('show hide');
-//     $('div.add-order-panel').toggleClass('up down');
-// });
+$('div.food-container').click(function() {
+    // Show Qty Icon
+    $('div.qty-icon', this).addClass('show');
 
-// Update drink quantity
-// $(function() {
-//     $('.drink-container').click( function() {
-//         var num = $(this).find('.qty-icon-drink');
-//         num.text( parseInt(num.text()) + 1 );
-//     });
-// });
+    // Show order buttons
+    $('div.add-order-panel').removeClass('down');
+    $('div.add-order-panel').addClass('up');
 
+    // Hide bottom bar
+    $('div.bottom-nav').removeClass('show');
+    $('div.bottom-nav').addClass('hide');
+});
+
+// Add to Food Order Button Update
+$('div.food-container.burger').click(function() {
+  // Update item total
+  $(".order-but-container.one .bold-cash").text(2);
+  $(".order-but-container.one #update-item").text('Items');
+  $("#total").text("$" + 12);
+});
+
+// Order Received Animation Up
+$('div.order-but-container.two.confirm').click(function() {
+    // Hide Send Order Button
+    $('div.add-order-panel').removeClass('up');
+    $('div.add-order-panel').addClass('down');
+
+    // Animate recevied panel
+    $('div.order-received-panel').removeClass('down');
+    $('div.order-received-panel').addClass('up');
+
+    // Hide Food qty
+    $('div.confirm-order-panel').removeClass('up');
+    $('div.confirm-order-panel').addClass('down');
+});
