@@ -90,7 +90,7 @@ $('div.food-container.burger').click(function() {
   // Update item total
   $(".order-but-container.one .bold-cash").text(2);
   $(".order-but-container.one #update-item").text('Items');
-  $("#total").text("$" + 12);
+  $("#total").text("$" + 10);
 });
 
 // Order Received Animation Up
