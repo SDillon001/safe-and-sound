@@ -1088,6 +1088,7 @@ span#drink-name {
 .content-wrapper.scroll {
     position: relative;
     height: 900px;
+    top: 145px;
 }
 
 .food-container {
