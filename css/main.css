@@ -244,6 +244,21 @@ HOME
   background-repeat: no-repeat;
 }
 
+.main-container.food {
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+  width: 414px;
+  height: 896px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(images/bg-blur-overlay-v2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
 .main-container.map-zoom-in {
   position: relative;
   top: 40px;
@@ -426,8 +441,79 @@ HOME
   text-align: right;
 }
 
-.left-bubble {
-  text-align: left;
+.right-bubble.one {
+  animation: 200ms ease-out 0s 1 fadeInleft;
+  opacity: 0;
+  animation-delay: 600ms;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-bubble.one {    
+  opacity: 0;
+  animation: slideRight 300ms ease-in-out 1s;
+  animation-delay: 1600ms;
+  animation-fill-mode: both;
+}
+
+@keyframes slideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }   
+}
+
+.right-bubble.two {   
+  opacity: 0;
+  animation: slideleft 300ms ease-in-out 1s;
+  animation-delay: 2800ms;
+  animation-fill-mode: both;
+}
+
+@keyframes slideleft {
+    0% {
+      opacity: 0;
+      transform: translateX(60%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }   
+}
+
+.left-bubble.two {    
+  opacity: 0;
+  animation: slideRight 300ms ease-in-out 1s;
+  animation-delay: 3800ms;
+  animation-fill-mode: both;
+}
+
+@keyframes slideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }   
 }
 
 a#chat-link {
@@ -603,6 +689,7 @@ span.bold-cash {
     align-items: center;
     border-bottom: 0px;
     background: #000;
+    z-index: 10000;
 }
 
 hr#hr-drink-indicator {
@@ -616,7 +703,7 @@ hr#hr-drink-indicator {
 
 /* Add to Order Panel */
 .add-order-panel.down {
-  position: fixed;
+  position: absolute;
   display: flex;
   width: 414px;
   height: 70px;
@@ -631,21 +718,6 @@ hr#hr-drink-indicator {
 }
 
 .add-order-panel.up {
-  position: fixed;
-  display: flex;
-  width: 414px;
-  height: 70px;
-  background: #000;
-  border-radius: 20px 20px 0px 0px;
-  bottom: 40px;
-  z-index: 10000;
-  transition: all 300ms;
-  -webkit-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
-  -moz-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
-  box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
-}
-
-.add-order-panel.food-menu.up {
   position: absolute;
   display: flex;
   width: 414px;
@@ -660,6 +732,21 @@ hr#hr-drink-indicator {
   box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
 }
 
+.add-order-panel.food-menu.up {
+  position: fixed;
+  display: flex;
+  width: 414px;
+  height: 70px;
+  background: #000;
+  border-radius: 20px 20px 0px 0px;
+  transform: translateY(-40px);
+  transition: all 300ms;
+  z-index: 10000;
+  -webkit-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+  box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
+}
+
 .add-order-panel.food-menu.down {
   position: absolute;
   display: flex;
@@ -667,9 +754,10 @@ hr#hr-drink-indicator {
   height: 70px;
   background: #000;
   border-radius: 20px 20px 0px 0px;
-  bottom: -80px;
-  z-index: 10000;
+  opacity: 0;
+  transform: translateY(-60px);
   transition: all 300ms;
+  z-index: 10000;
   -webkit-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
   -moz-box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
   box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.15);
