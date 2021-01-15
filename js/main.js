@@ -96,8 +96,8 @@ $('div.food-container.burger').click(function() {
 // Order Received Animation Up
 $('div.order-but-container.two.confirm').click(function() {
     // Hide Send Order Button
-    $('div.add-order-panel').removeClass('up');
-    $('div.add-order-panel').addClass('down');
+    $('.add-order-panel.food-menu').removeClass('up');
+    $('.add-order-panel.food-menu').addClass('down');
 
     // Animate recevied panel
     $('div.order-received-panel').removeClass('down');
