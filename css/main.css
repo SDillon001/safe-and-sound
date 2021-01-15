@@ -326,6 +326,7 @@ HOME
 
 .content-wrapper {
   position: relative;
+  top: -18px;
 }
 
 .inner-scroll-container.space-c14 {
