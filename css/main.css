@@ -372,6 +372,10 @@ HOME
   margin: 0 auto;
 }
 
+.title.c-14 h4 {
+  font-family: Syncopate-Bold;
+}
+
 .user-name h4 {
   font-family: Lato;
   margin: 10px 0px 0px;
