@@ -1223,6 +1223,9 @@ span#drink-name {
     height: 170px;
     background-color: rgb(255 255 255 / .10);
     border-radius: 20px;
+}
+
+.food-container.active {
     cursor: pointer;
 }
 
