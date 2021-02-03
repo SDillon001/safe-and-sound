@@ -72,7 +72,7 @@ $('div.order-but-container.two.confirm').click(function() {
 });
 
 // Food qty and order panel
-$('div.food-container').click(function() {
+$('div.food-container.active').click(function() {
     // Show Qty Icon
     $('div.qty-icon', this).addClass('show');
 
@@ -86,7 +86,7 @@ $('div.food-container').click(function() {
 });
 
 // Add to Food Order Button Update
-$('div.food-container.burger').click(function() {
+$('div.food-container.active.burger').click(function() {
   // Update item total
   $(".order-but-container.one .bold-cash").text(2);
   $(".order-but-container.one #update-item").text('Items');
