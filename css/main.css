@@ -1155,6 +1155,7 @@ span#drink-name {
 }
 
 .food-menu-title h4 {
+  margin-top: 14px;
   color: #fff;
   font-family: Syncopate-bold;
   font-size: 24px;
@@ -1210,7 +1211,7 @@ span#drink-name {
 .content-wrapper.scroll {
     position: relative;
     height: 900px;
-    top: 145px;
+    top: 125px;
 }
 
 .food-container {
