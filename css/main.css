@@ -1471,6 +1471,21 @@ MEDIA QUERIES
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  .fab-link {
+      left: 649px;
+      bottom: 52px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .fab-link {
+      left: 606px;
+      bottom: 52px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .main-container {
     position: static;
